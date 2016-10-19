@@ -3,7 +3,7 @@ This repository is dedicated to show different ways (split1.py, spit2.py, split3
 
 ## split1.py
 
-Divides the matrix row-wise. Uses SEND and RECV. The programmer has to compute the distribution among the processes. Gives, all the freedom to the programmer to choose the better distribution. One process can 	have several rows. Each process receives the data in a matrix (2Dimensions).
+Divides the matrix row-wise. It uses SEND and RECV directives. The programmer has to compute the distribution among the processes. It gives all the freedom to programmers to choose the distribution of data among processes. A process can have several rows. Each process receives the data in a matrix shape (2Dimensions).
 
 	mpiexec -n 10 python split1.py > output_1
 
@@ -11,7 +11,7 @@ In this example, each process gets 100 rows. And the 10 process computes in para
 
 ## split2.py
 
-Divides the matrix column-wise.  Uses SEND and RECV. The programmer has to compute the distribution among the processes. Gives, all the freedom to the programmer to choose the better distribution. One process can have several columns. Each process receives the data in a matrix (2Dimensions).
+Divides the matrix column-wise. It uses SEND and RECV directives. The programmer has to compute the distribution among the processes. It gives all the freedom to programmers to choose the distribution of data among processes. A process can have several columns. Each process receives the data in a matrix shape (2Dimensions).
 	 
 	mpiexec -n 10 python split2.py > output_2
 

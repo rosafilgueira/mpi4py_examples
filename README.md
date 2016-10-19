@@ -9,7 +9,9 @@ Divides the matrix row-wise. Uses SEND and RECV. The programmer has to compute t
 
 In this example, each process gets 100 rows. And the 10 process computes in parallel the sum of their 100 rows. Each row has 4801 elements.
 
-## split2.py:  Divides the matrix column-wise.  Uses SEND and RECV. The programmer has to compute the distribution among the processes. Gives, all the freedom to the programmer to choose the better distribution. One process can have several columns. Each process receives the data in a matrix (2Dimensions).
+## split2.py
+
+Divides the matrix column-wise.  Uses SEND and RECV. The programmer has to compute the distribution among the processes. Gives, all the freedom to the programmer to choose the better distribution. One process can have several columns. Each process receives the data in a matrix (2Dimensions).
 	 
 	mpiexec -n 10 python split2.py > output_2
 
@@ -17,7 +19,7 @@ In this example, each process gets 480 columns (except the last process, which g
 
 ## split3.py   
 
-Divides the matrix row-wise. Uses SCATTER. The distribution is made AUTOMATICALLY by SCATTER directive.No freedom for choosing the better distribution. One process HAS ONLY ONE row. Each process receives the data (the row) in a array (1DIMENSION).
+Divides the matrix row-wise. Uses SCATTER. The distribution is made automatically by the *scatter* directive.No freedom for choosing the better distribution. One process HAS ONLY ONE row. Each process receives the data (the row) in a array (1DIMENSION).
               
 	mpiexec -n 10 python split3.py > output_3
 

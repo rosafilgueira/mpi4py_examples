@@ -1,3 +1,11 @@
+#Divides the matrix column-wise. 
+#Uses SCATTER. 
+#The distribution is made AUTOMATICALLY by SCATTER directive. 
+#No freedom for choosing the distribution. 
+#One process has only one column. Each process receives the data (column) in a array of 1DIMENSION
+
+#mpiexec -n 3 python split4.py > output_4
+
 from mpi4py import MPI
 import numpy
 from numpy import random

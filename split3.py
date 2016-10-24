@@ -1,3 +1,12 @@
+#Divides the matrix row-wise. 
+#Uses SCATTER. 
+#The distribution is made automatically by the SCATTER directive. 
+#No freedom for choosing the distribution. 
+#One process has only one row. 
+#Each process receives the data (row) in a array of 1DIMENSION.
+
+#mpiexec -n 10 python split3.py > output_3
+
 from mpi4py import MPI
 import numpy
 from numpy import random

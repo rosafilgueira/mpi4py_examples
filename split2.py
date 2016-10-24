@@ -1,3 +1,14 @@
+#Divides the matrix column-wise. 
+#It uses SEND and RECV directives. 
+#Programmers have to compute the distribution of data among processes. 
+#A process can compute several columns. 
+#Each process receives the data in a matrix shape of 2Dimensions.
+
+#mpiexec -n 10 python split2.py > output_2
+
+#In this example, each process gets 480 columns (except the last process, which gets 481). 
+#Later, all the processes (in this example: 10 processes) computes in parallel the sum of their 480 colums. Each column has 1000 elements.
+
 from mpi4py import MPI
 import numpy
 from numpy import random

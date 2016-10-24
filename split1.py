@@ -1,3 +1,14 @@
+#Divides the matrix row-wise. It uses SEND and RECV directives. 
+#Programmers have to compute the distribution of data among processes. 
+#A process can compute several rows. 
+#Each process receives the data in a matrix shape of 2Dimensions.
+
+#mpiexec -n 10 python split1.py > output_1
+
+#In this example, each process gets 100 rows. 
+#Later, all the processes (in this example: 10 processes) computes in parallel the sum of their 100 rows. 
+#Each row has 4801 elements.
+
 from mpi4py import MPI
 import numpy
 from numpy import random

@@ -1,3 +1,12 @@
+#Divides the matrix row-wise. 
+#Uses SCATTERV. 
+#The programmers have to compute the distribution of data. 
+#One process can have several columns. One process can have more columns than others. 
+#The data can have gaps (if the programmer desires that). Each process receives the data (several columns) in a array (1DIMENSION).
+
+#mpiexec -n 10 python split6.py > output_6
+
+
 from mpi4py import MPI
 import numpy
 from numpy import random

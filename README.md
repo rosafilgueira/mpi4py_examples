@@ -1,5 +1,5 @@
 # mpi4py_examples
-This repository is dedicated to show different wasy ( by creating 6 programs: split1.py, spit2.py, split3,py, split4.py , split,py and split6.py) to distribute a matrix of 1000x4801 elements, which has been generated randomly, among several processes by using different strategies. As soon as each process has each own chunk of the matrix, they compute the sum of their chunk
+This repository is dedicated to show different ways ( by creating 6 programs: split1.py, spit2.py, split3,py, split4.py , split,py and split6.py) to distribute a matrix of 1000x4801 elements, which has been generated randomly, among several processes by using different strategies. As soon as each process has each own chunk of the matrix, they compute the sum of their chunk
 
 ## split1.py
 
